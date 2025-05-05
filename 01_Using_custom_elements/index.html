@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_Using_custom_elements</title>
+</head>
+
+<body>
+    <div id="app">
+        <my-custom-element size="100" color="#409eff">Hello this is "my-custom-element" inner</my-custom-element>
+        <div style="height: 100px;"></div>
+        <popup-info img="img/alt.png" data-text="Your card validation code (CVC)
+  is an extra security feature — it is the last 3 or 4 numbers on the
+  back of your card."></popup-info>
+        <ul is="expanding-list">
+            <li>张三</li>
+            <li>李四</li>
+            <li>王五</li>
+        </ul>
+        <custom-square size="100" color="#409eff"></custom-square>
+    </div>
+    <script src="./components/MyCustomElement.js"></script>
+    <script src="./components/PopupInfo.js"></script>
+    <script src="./components/ExpandingList.js"></script>
+    <script src="./components/CustomSquare.js"></script>
+</body>
+
+</html>
